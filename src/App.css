@@ -1,0 +1,19 @@
+/* App-level layout overrides (minimal – index.css has the design system) */
+
+/* Remove Vite default styles */
+.logo { display: none; }
+
+/* Full-height layout for the IDE */
+.ide-editor-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Ensure CodeMirror fills editor area */
+.ide-editor-area > div {
+  flex: 1;
+  min-height: 0;
+}
